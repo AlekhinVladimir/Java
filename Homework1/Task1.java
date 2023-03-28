@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class Task1 {
     public static void main(String[] args) {
+        System.out.print("\033[H\033[J");
         Scanner iScanner = new Scanner(System.in);
         System.out.printf("Введите число n: ");
         int n = iScanner.nextInt();
