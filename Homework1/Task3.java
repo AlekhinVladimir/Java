@@ -18,7 +18,7 @@ public class Task3 {
 
         System.out.print("Введите второе число: ");
         double num2 = input.nextDouble();
-
+        input.close();
         double result;
 
         switch(operator) {

@@ -12,7 +12,9 @@ import java.util.Scanner;
 public class Task4 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Введите уравнение вида q + w = e, где q, w, e >= 0, и некоторые цифры заменены знаком вопроса: ");
+        System.out.print(
+                "Введите уравнение вида q + w = e, где q, w, e >= 0, и некоторые цифры заменены знаком вопроса: ");
+        input.close();
         String equation = input.nextLine();
         String[] parts = equation.split("[+=]");
         if (parts.length != 3) {

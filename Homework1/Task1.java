@@ -10,6 +10,7 @@ public class Task1 {
         System.out.print("\033[H\033[J");
         Scanner iScanner = new Scanner(System.in);
         System.out.printf("Введите число n: ");
+        iScanner.close();
         int n = iScanner.nextInt();
         System.out.println(n);
         int triangle = (n * (n + 1)) / 2;
