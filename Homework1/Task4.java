@@ -14,9 +14,10 @@ public class Task4 {
         Scanner input = new Scanner(System.in);
         System.out.print(
                 "Введите уравнение вида q + w = e, где q, w, e >= 0, и некоторые цифры заменены знаком вопроса: ");
-        input.close();
+        
         String equation = input.nextLine();
         String[] parts = equation.split("[+=]");
+        input.close();
         if (parts.length != 3) {
             System.out.println("Некорректный ввод.");
             return;
@@ -44,13 +45,13 @@ public class Task4 {
         return number.replaceFirst("\\?", String.valueOf(digit));
     }
     
-    private static boolean isValidEquation(String A, String B, String C) {
-        if (A.charAt(0) == '0' || B.charAt(0) == '0' || C.charAt(0) == '0') {
+    private static boolean isValidEquation(String Q, String W, String E) {
+        if (Q.charAt(0) == '0' || W.charAt(0) == '0' || E.charAt(0) == '0') {
             return false; // числа не могут начинаться с нуля
         }
-        int a = Integer.parseInt(A);
-        int b = Integer.parseInt(B);
-        int c = Integer.parseInt(C);
-        return a + b == c;
+        int q = Integer.parseInt(Q);
+        int w = Integer.parseInt(W);
+        int e = Integer.parseInt(E);
+        return q + w == e;
     }
 }
