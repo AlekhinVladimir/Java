@@ -1,4 +1,4 @@
-package OOP.Homework1;
+package Homework1;
 public class Product {
     protected String name;
     protected String brand;

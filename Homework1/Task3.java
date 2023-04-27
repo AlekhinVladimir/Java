@@ -2,7 +2,7 @@
 // Ввод числа ->
 // Ввод знака ->
 // Ввод числа ->
-package Homework1;
+
 
 import java.util.Scanner;
 
